@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button type="button" onclick="showmessage()">Alert</button>
+    <p id="messageDiv"></p>
+    <button type="button" onclick="showmessage1()">Hiển thị văn bản</button><br>
+    <button type = "button" onclick="showmessage2()">document.write</button><br>
+    <button type = "button" onclick="showmessage3()">console.log</button>
+    <p id = "demo"></p>
+    <script src="a.js"></script>
+    <script>
+        function showmessage(){
+            alert("Xin chào");
+        }
+        function showmessage1(){
+            document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+        }
+        function showmessage2(){
+            document.write("xin chào");
+        }
+        function showmessage3(){
+            console.log("xin chào")
+        }
+    </script>
+
+</body>
+</html>
